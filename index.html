@@ -30,6 +30,7 @@
    <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-1 bg-gray-900"></span>
   </a>
  </header>
+ <!-- Hero/Title -->
   <section class="grid place-items-center mt-24 lg:mt-0 lg:h-screen" data-aos="fade-down" data-aos-duration="1000">
     <div class="w-full max-w-7xl mx-auto">
       <div class="flex flex-col items-center">
@@ -48,50 +49,41 @@
       </div>
     </div>
   </section>
+
+  <!-- Pengenalan -->
   <section class="p-4 py-20">
     <div class="w-full max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row gap-4">
+        <!-- Foto Arashy -->
         <div
-          class="flex w-full rounded-xl p-8 min-h-[400px] md:min-h-[600px] lg:min-h-[800px] bg-cover bg-center border"
-          style="background-image:url(https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
-          <div class="mt-auto flex flex-col md:flex-row gap-4 w-full">
-            <a href=""
-              class="bg-white hover:bg-black hover:text-white p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
-              <span class="pl-2">Learn more</span>
-              <i
-                class="flex items-center justify-center bi bi-arrow-down bg-black text-white rounded-full p-1 w-[40px] h-[40px] text-center"></i>
-            </a>
-            <a href=""
-              class="bg-white hover:bg-black hover:text-white p-2 text-xl rounded-full w-full flex gap-4 justify-between items-center">
-              <span class="pl-2">Contact us</span>
-              <i
-                class="flex items-center justify-center bi bi-envelope bg-black text-white rounded-full p-1 w-[40px] h-[40px] text-center"></i>
-            </a>
-          </div>
+          class="flex w-full rounded-xl p-8 min-h-[400px] md:min-h-[600px] max-w-[500px] mx-auto bg-cover bg-center border"
+          style="background-image:url(./public/arashy.png); background-position: center top;">
+          
         </div>
-        <div class="w-full flex flex-col gap-4">
-          <div class="w-full h-full rounded-xl p-8 bg-gradient-to-tr from-gray-200 to-gray-100  shadow-xl">
+        <div class="w-full flex flex-col gap-4 lg:py-4">
+          <div class="w-full h-full rounded-xl p-8 bg-gradient-to-tr from-gray-300 to-gray-100 shadow-xl">
+           <!-- Perkenalan -->
             <h1 class="text-2xl lg:text-4xl mb-auto pb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nice to meet you, I'm Madyan Arashy.
             </h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, neque iusto. Aperiam animi, facere
-              numquam corrupti fugit non laboriosam excepturi quaerat a mollitia ut.
+            <p class="text-md">
+             A versatile Fullstack Web Developer with extensive experience in creating and managing web applications. <br/>
+             Proficient in both front-end and back-end development, with a keen eye for detail and a passion for delivering high-quality, user-centric solutions.
             </p>
           </div>
           <div class="h-full flex flex-col md:flex-row gap-4">
-            <a href=""
-              class="min-h-[150px] flex w-full overflow-hidden rounded-xl bg-gray-300 bg-cover bg-center border"
-              style="background-image:url(https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+            <a href="#exprohotel"
+              class="h-[250px] flex w-full overflow-hidden rounded-xl bg-gray-300 bg-cover bg-center border"
+              style="background-image:url(./public/expro-hotel-hero.png);">
               <p class="text-white text-lg font-bold mt-auto w-full p-2 bg-black bg-opacity-70">
-                #NewCollection
+                #ExproHotel
               </p>
             </a>
-            <a href=""
-              class="min-h-[150px] flex w-full overflow-hidden rounded-xl bg-gray-300 bg-cover bg-center border"
-              style="background-image:url(https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+            <a href="#foodie"
+              class="h-[250px] flex w-full overflow-hidden rounded-xl bg-gray-300 bg-cover bg-center-top lg:bg-[center_left_-1rem] border"
+              style="background-image:url('./public/foodie-hero.png')">
               <p class="text-white text-lg font-bold mt-auto w-full p-2 bg-black bg-opacity-70">
-                #ContentCreator
+                #Foodie
               </p>
             </a>
           </div>
@@ -99,11 +91,12 @@
       </div>
     </div>
   </section>
+  <!-- Creations/Kreasi -->
   <section class="p-4 py-20">
     <div class="w-full max-w-7xl mx-auto">
       <div class="pb-8 flex justify-between items-center gap-8">
         <h2 class="text-4xl lg:text-5xl pb-4">
-          Our collections
+          My Creations
         </h2>
         <div class="hidden md:flex gap-6 text-2xl">
           <a href="">
@@ -117,25 +110,27 @@
         </div>
       </div>
 
-      <div class="flex gap-4">
-        <a href="" class="w-full flex flex-col gap-2">
+      <div class="flex gap-4 max-w-full overflow-x-scroll" id="exprohotel">
+       <!-- Card 1 -->
+        <a href="" class="min-w-[400px] flex flex-col gap-2" draggable="false">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
-            <img class="w-full"
+            <img class="select-none" draggable="false"
               src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
               alt="">
           </div>
-          <h3 class="text-2xl pt-4">New collection</h3>
+          <h3 class="text-2xl pt-4">Expro Hotel</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. et dolor y etlerim dolor gils de nada!
           </p>
         </a>
-        <a href="" class="w-full flex flex-col gap-2">
+        <!-- Card 2 -->
+        <a href="" class="min-w-[400px] flex flex-col gap-2" draggable="false">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
-            <img class="w-full"
+            <img class="select-none" draggable="false"
               src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
               alt="">
           </div>
@@ -144,11 +139,26 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. et dolor y etlerim dolor gils de nada!
           </p>
         </a>
-        <a href="" class="w-full hidden md:flex flex-col gap-2">
+        <!-- Card 3 -->
+        <a href="" class="min-w-[400px] flex-col gap-2" draggable="false">
           <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
             <i
               class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
-            <img class="w-full"
+            <img class="select-none" draggable="false"
+              src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
+              alt="">
+          </div>
+          <h3 class="text-2xl pt-4">Classics</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. et dolor y etlerim dolor gils de nada!
+          </p>
+        </a>
+        <!-- Card 4 -->
+        <a href="" class="min-w-[400px] hidden md:flex flex-col gap-2" draggable="false" id="foodie">
+          <div class="max-h-[300px] md:max-h-[500px] overflow-hidden rounded-xl shadow-xl relative">
+            <i
+              class="flex items-center justify-center text-white rounded-full bg-black p-2 bi bi-arrow-up-right absolute top-4 right-4"></i>
+            <img class="select-none" draggable="false"
               src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
               alt="">
           </div>
